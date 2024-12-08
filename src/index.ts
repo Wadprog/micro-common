@@ -1,5 +1,3 @@
-import e from 'express';
-
 export * from './lib/logger';
 export * from './schema/city.schema';
 export * from './schema/user.schema';
