@@ -7,7 +7,7 @@ interface Event {
 }
 
 
-abstract class Listener<T extends Event> {
+export abstract class Listener<T extends Event> {
     abstract subject: string;
     abstract queueGroupName: string;
     abstract onMessage(data: T['data'], msg: Message): void;
@@ -48,4 +48,3 @@ abstract class Listener<T extends Event> {
     }
 }
 
-export  default Listener;
