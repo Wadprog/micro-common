@@ -2,7 +2,7 @@ import { AnyZodObject } from 'zod';
 import { BadRequest } from '@feathersjs/errors';
 import { HookContext } from '@feathersjs/feathers';
 
-const validateResource = (schema: AnyZodObject) => (context: HookContext): HookContext => {
+export const validateParams = (schema: AnyZodObject) => (context: HookContext): HookContext => {
   try {
     schema.parse({
       body: context.data,
@@ -15,4 +15,4 @@ const validateResource = (schema: AnyZodObject) => (context: HookContext): HookC
   }
 };
 
-export default validateResource;
+
