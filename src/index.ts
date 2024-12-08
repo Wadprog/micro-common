@@ -1,16 +1,5 @@
-interface Color {
-    red: number;
-    green: number;
-    blue: number;
-}
+export * from  './schema/city.schema';
+export * from  './schema/country.schema';
+export * from  './schema/user.schema';
 
- const color: Color = {
-    red: 255,
-    green: 0,
-    blue: 0
-    
-};
-
-console.log(color);
-
-export default color;
+export * from  './middleware/validateResource';
