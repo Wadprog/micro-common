@@ -8,4 +8,5 @@ export * from './streaming_server/events/subjects';
 export * from './streaming_server/events/userRegistered';
 export * from './streaming_server/listener';
 export * from './streaming_server/natsWrapper';
+export * from './streaming_server/publisher';
 
