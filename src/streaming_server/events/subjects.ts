@@ -7,6 +7,7 @@ export enum Subjects {
     UserLoggedOut = 'user:logged-out',
     EmailVerified = 'email:verified',
     PasswordReset = 'password:reset',
+    PasswordChanged = 'password:changed',
 
 }
 

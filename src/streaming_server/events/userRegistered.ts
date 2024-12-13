@@ -11,3 +11,16 @@ export type EmailVerifiedEvent = {
     data: UserInterface
 }
 
+export type PasswordResetEvent = {
+    subject: Subjects.PasswordReset,
+    data: {
+        userId: number;
+        passwordResetKey: string;
+        passwordResetExpires: Date;
+    }
+}
+
+export type PasswordChanged = {
+    subject: Subjects.PasswordChanged,
+    data: UserInterface
+}
