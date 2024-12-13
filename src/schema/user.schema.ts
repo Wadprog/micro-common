@@ -28,7 +28,8 @@ export const createUserSchema = object({
 
 export const UserSchema = z.object({
   id: z.number(),
-  emailVerificationkey: string(),
+  emailVerificationKey: string(),
+  emailVerified: z.boolean(),
   firstName: string(),
   lastName: string(),
   email: string().email(),

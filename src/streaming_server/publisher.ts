@@ -5,6 +5,8 @@ interface Event {
     subject: Subjects;
     data: any;
 }
+
+const d =()=> {}
 export abstract class Publisher <T extends Event> {
     abstract subject: T['subject'];
     constructor(private client: Stan) {}
