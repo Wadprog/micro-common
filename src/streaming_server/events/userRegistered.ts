@@ -6,6 +6,11 @@ export type UserRegisteredEvent = {
     data: UserInterface
 }
 
+export type UserDeletedEvent ={
+    subject: Subjects.UserDeleted,
+    data: {id: Pick<UserInterface, 'id'>}
+}
+
 export type EmailVerifiedEvent = {
     subject: Subjects.EmailVerified,
     data: UserInterface
