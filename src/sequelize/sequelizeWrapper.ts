@@ -14,5 +14,4 @@ class SequelizeWrapper {
     }
 }
 
-const sequelizeWrapper = new SequelizeWrapper()
-export default sequelizeWrapper;
+export const sequelizeWrapper = new SequelizeWrapper()
