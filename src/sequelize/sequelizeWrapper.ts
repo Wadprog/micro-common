@@ -3,8 +3,9 @@ import { Sequelize, Options } from "sequelize";
 class SequelizeWrapper {
     private _client: Sequelize | undefined = undefined;
 
-    connect(dbOptions: Options) {
-        this._client = new Sequelize(dbOptions)
+     connect(dbOptions: Options) {
+        this._client =  new Sequelize(dbOptions)
+        
     }
 
     get client() {

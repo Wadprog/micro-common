@@ -29,3 +29,8 @@ export type PasswordChanged = {
     subject: Subjects.PasswordChanged,
     data: UserInterface
 }
+
+export type ProfileCreated={
+    subject:Subjects.UserCreated,
+    data:UserInterface
+}
