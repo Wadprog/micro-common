@@ -15,8 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-cognito-identity-provider": "^3.758.0",
     "@feathersjs/errors": "^4.5.12",
     "@feathersjs/feathers": "^4.5.12",
+    "aws-jwt-verify": "^5.0.0",
     "node-nats-streaming": "^0.3.2",
     "winston": "^3.17.0",
     "zod": "^3.23.8"
