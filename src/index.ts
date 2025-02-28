@@ -14,3 +14,5 @@ export * from './server/libs/onError'
 export * from './server/libs/onListening'
 export * from './server/libs/normalizePort'
 export * from './auth/cognito.service'
+export * from './auth/requireAuth'
+
